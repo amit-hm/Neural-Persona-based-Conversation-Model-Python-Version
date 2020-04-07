@@ -17,7 +17,7 @@ class decode_model(persona):        #Inheriting from persona
 
     def __init__(self, params):
         #getting Params pickle file which was saved in persona.train()
-        with open(params.decode_path+"/params.pickle", 'rb') as file:       
+        with open(params.decode_path+"/non_persona/params.pickle", 'rb') as file:       
             model_params = pickle.load(file)
             
         #Copying those parameters from model_params which are not in params
