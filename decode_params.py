@@ -4,7 +4,7 @@ class decode_params:
 		self.batch_size=256
 		self.SpeakerID=2
 		self.decode_path="save/testing"
-		self.model_file=self.decode_path+"/model1"
+		self.model_file=self.decode_path+"/model10"
 		self.DecodeFile="/dataset_full_output_int_test.txt"
 		self.DiverseRate=0
 		self.OutputFolder="outputs"
