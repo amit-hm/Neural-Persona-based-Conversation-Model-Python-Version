@@ -5,7 +5,7 @@ class decode_params:
 		self.SpeakerID=2
 		self.decode_path="save/testing"
 		self.model_file=self.decode_path+"/model1"
-		self.DecodeFile="/test.txt"
+		self.DecodeFile="/dataset_full_output_int_test.txt"
 		self.DiverseRate=0
 		self.OutputFolder="outputs"
 		self.max_length=20
