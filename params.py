@@ -9,9 +9,10 @@ class params:
 		self.PersonaMode=True
 		
 		self.train_path="data/testing"
-		self.train_file="/train.txt"
-		self.dev_file="/valid.txt"
+		self.train_file="/dataset_full_output_int_train.txt"
+		self.dev_file="/dataset_full_output_int_valid.txt"
 		self.dictPath="/vocabulary"
+		self.speakdictPath="/dataset_full_characters.txt"
 		
 		self.fine_tuning=False
 		self.fine_tuning_model="save/model"
