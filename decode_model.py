@@ -45,7 +45,7 @@ class decode_model(persona):        #Inheriting from persona
             
         self.readModel()    #loading the model(only parameters) of first iteration in training
         self.ReadDict()     #buidling a dictionary of words, with keys from 0 to len(dictionary.txt)
-
+        self.read_dict()
         
     def sample(self):
         self.model_forward()
