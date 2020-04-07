@@ -5,7 +5,7 @@ class params:
 		self.dropout=0.2
 		self.max_iter=10
 		self.layers=4
-		self.SpeakerNum=2
+		self.SpeakerNum=866
 		self.PersonaMode=True
 		
 		self.train_path="data/testing"
