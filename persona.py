@@ -282,6 +282,7 @@ class persona:
             print("training in non persona mode")
             
         self.ReadDict()
+        self.read_dict()
 
 
     def weights_init(self,module):
@@ -298,6 +299,13 @@ class persona:
         for index in range(len(dictionary)):        # Dictionary is 0-indexed
             line=dictionary[index].strip()
             self.dict[index]=line
+    
+    def read_dict():
+        self.speaker_dict = {}
+        dictionary=open(self.params.train_path+self.params.speakdictPath,"r").readlines()
+        for index in range(len(dictionary)):
+            line=dictionary[index].strip()
+            self.speaker_dict[index] = line
 
     def IndexToWord(self,vector):
         if vector.dim()==0:
@@ -305,7 +313,10 @@ class persona:
         string=""
         for i in range(vector.size(0)):
             try:
-                string=string+self.dict[int(vector[i])]+" "
+                if (i == 0):
+                    string = string+self.speaker_dict[int(vector[i])]+":"
+                else:
+                    string=string+self.dict[int(vector[i])]+" "
             except KeyError: 
                 string=string+str(int(vector[i]))+" "
         string=string.strip()
