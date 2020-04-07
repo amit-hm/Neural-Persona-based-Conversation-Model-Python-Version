@@ -300,7 +300,7 @@ class persona:
             line=dictionary[index].strip()
             self.dict[index]=line
     
-    def read_dict():
+    def read_dict(self):
         self.speaker_dict = {}
         dictionary=open(self.params.train_path+self.params.speakdictPath,"r").readlines()
         for index in range(len(dictionary)):
